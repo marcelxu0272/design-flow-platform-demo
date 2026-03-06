@@ -59,8 +59,8 @@ function FlowEditorInner() {
   }, [setSelectedNodeId])
 
   return (
-    <div className="flex flex-1 overflow-hidden">
-      <div className="flex-1">
+    <div className="flex flex-1 min-h-0 h-full overflow-hidden">
+      <div className="flex-1 min-h-0 w-full h-full">
         <ReactFlow
           nodes={nodes}
           edges={edges}

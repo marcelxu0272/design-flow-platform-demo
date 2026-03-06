@@ -152,9 +152,11 @@ export default function FlowModelEditorPage({ params }: { params: Promise<{ id: 
           onVersionHistory={() => setVersionsOpen(true)}
         />
 
-        {/* Editor */}
-        <div className="flex-1 overflow-hidden">
-          <FlowEditor />
+        {/* Editor: flex container + full-height wrapper so ReactFlow gets width/height */}
+        <div className="flex flex-1 flex-col min-h-0 overflow-hidden">
+          <div className="flex-1 min-h-0 w-full flex flex-col">
+            <FlowEditor />
+          </div>
         </div>
       </ReactFlowProvider>
 
