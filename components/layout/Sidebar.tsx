@@ -12,6 +12,7 @@ import {
   ArrowRightLeft,
   ChevronLeft,
   ChevronRight,
+  PanelTopClose,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useAppStore } from "@/lib/stores/useAppStore"
@@ -20,6 +21,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip
 
 const navItems = [
   { href: "/", icon: LayoutDashboard, label: "仪表盘" },
+  { href: "/test-collapse", icon: PanelTopClose, label: "测试折叠" },
   { href: "/data-dictionary", icon: BookOpen, label: "数据字典" },
   { href: "/data-sources", icon: Database, label: "数据源" },
   { href: "/data-flows", icon: ArrowRightLeft, label: "数据流向" },
